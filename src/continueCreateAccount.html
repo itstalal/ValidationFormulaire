@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="./assets/CSS/continue.css" />
+  </head>
+  <body>
+    <!-- Formulaire de Contiue Create An Account -->
+    <form id="continueCreateAccount" onsubmit="return validerFormulaireContinueCreateAccount()">
+        <h4>Continue with.</h4>
+    
+        <label for="Mot_de_passe">Mot de passe</label>
+        <input type="password" id="Mot_de_passe" name="Mot_de_passe"  />
+        <div class="afficherMasquer">
+            <input type="checkbox" id="afficherMasquer" onclick="togglePassword('Mot_de_passe', 'lblafficherMasquer1', 'afficherMasquer')" value="" />
+            <label id="lblafficherMasquer1">Afficher votre mot de passe</label>
+        </div>
+    
+        <br />
+    
+        <label for="Confirmer_Mot_de_passe">Confirmer Mot de passe</label>
+        <input type="password" id="Confirmer_Mot_de_passe" name="Confirmer_Mot_de_passe"  />
+        <div class="afficherMasquer">
+            <input type="checkbox" id="afficherMasquer2" onclick="togglePassword('Confirmer_Mot_de_passe', 'lblafficherMasquer2', 'afficherMasquer2')" value="" />
+            <label id="lblafficherMasquer2">Afficher votre mot de passe</label>
+        </div>
+    
+        <br />
+    
+        <div class="button">
+            <input type="button" id="Retour" value="Retour" onclick="btnRetour()" />
+            <input type="submit" id="Confirmer" value="Confirmer" name="Confirmer" />
+        </div>
+        <div id="mdpValidation"></div>
+    </form>
+    
+  </body>
+</html>
+
+<script src="./assets/Js/script.js"></script>

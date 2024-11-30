@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+
+#createAccount{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 2px;
+    background-color: #fff;
+    width: 300px;
+}
+
+#createAccount input{
+width: auto;
+height: 30px;
+border: 1px solid gainsboro;
+border-radius: 3px;
+}
+
+
+.button-Suivant{
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+#createAccount #Suivant{
+padding: 5px;
+background-color: rgb(0, 132, 255);
+color: white;
+width: 100px;
+cursor: pointer;
+}

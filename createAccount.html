@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="./src/assets/CSS/create.css">
+</head>
+<body>
+    <!-- Formulaire de Create An Account -->
+    <form id="createAccount" onsubmit="return validerFormulaireCreateAccount()">
+        <h4>Create an account</h4>
+        
+            <label for="Nom">Nom</label>
+            <input type="text" id="Nom" name="Nom" value="">
+            <br>
+            <label for="Prenom">Prenom</label>
+            <input type="text" id="Prenom" name="Prenom" value="" >
+            <br>
+            <label for="Courriel">Courriel</label>
+            <input type="text" id="Email" name="email" value="" >
+            <div class="button-Suivant">
+                <input type="submit" id="Suivant" value="Suivant" name="Suivant" >
+            </div>
+            <div id="msgValidation"></div>
+    </form>
+
+</body>
+</html>
+
+<script src="./src/assets//Js/script.js"></script>
