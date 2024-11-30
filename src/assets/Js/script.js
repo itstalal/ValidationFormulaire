@@ -51,7 +51,7 @@ function validerFormulaireCreateAccount() {
     return false;
   }
 
-  if (!email.includes("@") || email.indexOf(".") < email.indexOf("@")) {
+  if (!email.includes("@") || email.lastIndexOf(".") < email.lastIndexOf("@")) {
     Validation.textContent = "exemple de courriel: exemple@exemple.domaine ";
     Validation.style.color = "red";
     return false;
